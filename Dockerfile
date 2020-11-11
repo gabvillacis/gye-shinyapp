@@ -14,7 +14,9 @@ RUN apt-get update && \
     apt-get clean
 
 # Download and install libraries
-RUN R -e "install.packages(c('shinydashboard', 'shinycssloaders'))"
+RUN R -e "install.packages(c('shinydashboard', 'shinycssloaders', 'rtweet', 'wordcloud2'))"
+RUN R -e "install.packages(c('tidytext', 'textdata', 'plotly', 'ggthemes', 'magrittr', 'stringr'))"
+RUN R -e "install.packages(c('purrr', 'tm'))"
 
 COPY app/* /srv/shiny-server/
 
