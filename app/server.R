@@ -17,8 +17,7 @@ library(ggthemes)
 library(magrittr)
 library(stringr)
 library(purrr)
-library(wordcloud2)
-
+library(tm)
 
 server <- function(input, output) {
     ## Preeliminares --------------
