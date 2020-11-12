@@ -1,1 +1,7 @@
 version: 3.7
+  services:
+    gye-shinyapp:
+      image: gye-shinyapp:latest
+      ports:
+        - "3838:3838"
+      restart: always
